@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 async function startCapture() {
     try {
         const stream = await navigator.mediaDevices.getDisplayMedia({
-            video: { mediaSource: "tab", width: 1920, height: 1080, frameRate: 30 },
+            video: { mediaSource: "tab", width: 1920, height: 1080, frameRate: 60 },
             audio: true
         });
 

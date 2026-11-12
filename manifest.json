@@ -10,6 +10,12 @@
         "storage",
         "scripting"
     ],
+    "web_accessible_resources": [
+  {
+    "resources": ["logo.png"],
+    "matches": ["<all_urls>"]
+  }
+],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
